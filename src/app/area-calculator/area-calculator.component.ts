@@ -8,8 +8,20 @@ import { Component } from '@angular/core';
 export class AreaCalculatorComponent {
   base: number = 0;
   altura: number = 0;
+  resultado: number = 0;
+  
+  calcularArea(): void {
+    console.log('Base:', this.base);
+    console.log('Altura:', this.altura);
 
-  calcularArea(): number {
+    this.resultado = (this.base * this.altura) / 2;
+
+    console.log('Resultado:', this.resultado);
+  }
+
+  calcularAreaTest(): number {
+    
     return(this.base * this.altura)/2;
   }
+
 }

@@ -23,7 +23,7 @@ describe('AreaCalculatorComponent', () => {
     component.base = 4;
     component.altura = 6;
 
-    const area = component.calcularArea();
+    const area = component.calcularAreaTest();
     expect(area).toEqual(12);
 
   });
@@ -32,7 +32,7 @@ describe('AreaCalculatorComponent', () => {
     component.base = 5;
     component.altura = 8;
 
-    const area = component.calcularArea();
+    const area = component.calcularAreaTest();
     expect(area).toEqual(20);
 
   });
@@ -41,8 +41,8 @@ describe('AreaCalculatorComponent', () => {
     component.base = 0;
     component.altura = 0;
 
-    const area = component.calcularArea();
-    expect(area).toEqual(0);
+    const area = component.calcularAreaTest();
+    expect(area).toEqual(0)
 
   });
 

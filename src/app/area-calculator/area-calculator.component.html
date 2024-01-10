@@ -1,1 +1,18 @@
-<p>area-calculator works!</p>
+<!-- area-calculator.component.html -->
+
+<form (ngSubmit)="calcularArea()">
+    <div>
+      <label for="baseInput">Base:</label>
+      <input id="baseInput" type="number" [(ngModel)]="base" name="base" required>
+    
+      <label for="alturaInput">Altura:</label>
+      <input id="alturaInput" type="number" [(ngModel)]="altura" name="altura" required>
+    
+      <button type="submit">Calcular Área</button>
+    </div>
+  </form>
+  
+  <div>
+    <p>Resultado: {{ resultado }}</p>
+  </div>
+  
